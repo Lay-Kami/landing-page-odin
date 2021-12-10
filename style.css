@@ -1,11 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    width: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
-img {
+/* Images sizes and placeholder proprieties are defined here */
+
+img,
+.icons,
+.photo {
     background-color: darkgray;
     color: white;
-    display: inline-flex;
+    display: block;
 }
 
 img.icons {
@@ -16,4 +26,97 @@ img.icons {
 img.photo {
     width: 500px;
     height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The document containers are showing here */
+
+/* header selection start */
+
+header {
+    background-color: #1f2937;
+    outline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+
+Header p {
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: 900;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: .5em;
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+/* header selection end */
+/* content selection start */
+
+.box-one {
+    outline: auto;
+    background-color: #1f2937;
+    display: flex;
+}
+
+.info-box {
+    outline: auto;
+}
+
+
+
+.box-one p {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+h1 {
+    color: #f9faf8;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+button {
+    color: #e5e7eb;
+    background-color: #3882f6;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+
+
+.box-two {
+    outline: auto;
+
+}
+
+.box-three {
+    outline: auto;
+
+}
+
+.box-four {
+    outline: auto;
+
+}
+
+footer {
+    outline: auto;
 }
