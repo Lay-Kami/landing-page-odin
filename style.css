@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,100&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
-    width: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -13,9 +12,7 @@ body {
 img,
 .icons,
 .photo {
-    background-color: darkgray;
     color: white;
-    display: block;
 }
 
 img.icons {
@@ -23,12 +20,10 @@ img.icons {
     height:100px;
 }
 
-img.photo {
-    width: 500px;
-    height:200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
 
 /* The document containers are showing here */
@@ -41,7 +36,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2%;
+    padding: 0 12vw;
 }
 
 Header p {
@@ -68,16 +63,30 @@ a {
 /* content selection start */
 
 .box-one {
-    outline: auto;
+    padding: 10vw 12vw;
     background-color: #1f2937;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo {
+    display: flex;
+    max-width: auto;
+    max-height: 300px;
+    border-radius: 5%;
+    flex: 1 0 auto;
+}
+
+.info-image {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .info-box {
-    outline: auto;
+    margin-right: 30px;
+    flex: 0 1 50%;
 }
-
-
 
 .box-one p {
     color: #e5e7eb;
@@ -95,20 +104,57 @@ button {
     background-color: #3882f6;
     font-size: 18px;
     font-weight: 900;
-    padding: 10px;
+    padding: 10px 30px;
     border-radius: 10px;
     border-style: none;
 }
 
+h2.info-text {
+    margin: 50px auto;
+    font-size: 36px;
+    font-weight: 900;
+}
 
 
 .box-two {
-    outline: auto;
+    margin: 50px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10vw;
+    justify-content: center;
+    align-items: center;
+}
 
+.info-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-two p {
+    text-align: center;
+    max-width: 100px;
+}
+
+.icons {
+    border: 3px solid #3882f6;
+    border-radius: 10%;
 }
 
 .box-three {
-    outline: auto;
+    text-align: center;
+    padding: 50px 50px;
+    background-color: #eee;
+    font-style: italic;
+    font-size: 36px;
+}
+
+.autor {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: end;
 
 }
 
