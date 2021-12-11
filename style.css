@@ -32,7 +32,6 @@ img {
 
 header {
     background-color: #1f2937;
-    outline: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,7 +62,7 @@ a {
 /* content selection start */
 
 .box-one {
-    padding: 10vw 12vw;
+    padding: 7vw 12vw;
     background-color: #1f2937;
     display: flex;
     justify-content: space-between;
@@ -159,10 +158,33 @@ h2.info-text {
 }
 
 .box-four {
-    outline: auto;
+    background-color: #3882f6;
+    color: #e5e7eb;
+    margin: 100px 100px;
+    border: #3882f6 2px solid;
+    border-radius: 2%;
+    padding: 5% 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
 
+.text-box-four {
+    text-align: start;
+}
+
+button.second-button {
+    border: 2px solid #e5e7eb;
+    max-width: 150px;
+    max-height: auto;
+    flex: 1;
 }
 
 footer {
-    outline: auto;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
